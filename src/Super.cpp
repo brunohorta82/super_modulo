@@ -8,10 +8,10 @@ void super(void *args)
 {
     char *msn = (char *)args;
 
-    ESP_LOGI("MYTASK", "OLAS");
+    ESP_LOGI("SUPER", "OLAS");
     while (true)
     {
-        ESP_LOGI("MYTASK", "LOOP %s", msn);
+        ESP_LOGI("SUPER", "LOOP %s", msn);
         vTaskDelay(pdTICKS_TO_MS(10));
     }
 }
